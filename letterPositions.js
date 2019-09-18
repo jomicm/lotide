@@ -28,7 +28,7 @@ const letterPositions = function(string) {
   return result;
 };
 
-console.log(letterPositions('lighthouse in the house')['l']);
+console.log(letterPositions('lighthouse in the house'));
 
 console.log(assertArraysEqual(letterPositions('lighthouse in the house')['l'], [0]));
 console.log(assertArraysEqual(letterPositions('lighthouse in the house')['i'], [1, 11]));
