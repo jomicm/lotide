@@ -29,7 +29,8 @@ const eqObjects = function(object1, object2) {
 };
 
 console.log(assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true)); // => true
-console.log(assertEqual(eqObjects({ a: { z: 1 }, b: 2, c: { q: 9, w: {e: 82, s: { g: { d : 3 } } } } }, { a: { z: 1 }, b: 2, c: { q: 9, w: {e: 82, s: { g: { d : 3 } } } }  }), true)); // => true
+console.log(assertEqual(eqObjects({ a: { z: 1 }, b: 2, c: { q: 9, w: {e: 82
+  , s: { g: { d : 3 } } } } }, { a: { z: 1 }, b: 2, c: { q: 9, w: {e: 82, s: { g: { d : 3 } } } }  }), true)); // => true
 console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false)); // => false
 console.log(assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }), false)); // => false
 
